@@ -24,9 +24,9 @@ import time
 app = Flask(__name__)
 static_tmp_path = os.path.join(os.path.dirname(__file__), 'static', 'tmp')
 # Channel Access Token
-line_bot_api = LineBotApi('R60lcR7k2nfcCzSfkRpAFkv6DoiXwJLIBf+zdR8qBfRig60rEZrAoTbWd3pLvmuwJ99ko49MPfPOSuxFy2a/ztkgz7UTbnSFb9BHMKR9viDEVCYirsPhufBz3EE6jllolMzE5DE2wMqKNWP7Xui1vQdB04t89/1O/w1cDnyilFU=')
+line_bot_api = LineBotApi('iYDxt8AjWwpiBlgXM54EYUQkY9/luGnQ5pHFAb8bDE3i3qLE0SxmmJSOrM1E30Tg+SNQPh8J8CCIuFwXsEkLvgA5qH0+D/y3PeFJikgvuQG1DpvpUmJHDi24xUwuHzhpzXovODZDglXmNfaC7sk2gAdB04t89/1O/w1cDnyilFU=')
 # Channel Secret
-handler = WebhookHandler('55efd2ee0104755237f28a9567334f3b')
+handler = WebhookHandler('e77911630a2ea8108ba8a8354f2773e7')
 
 # 監聽所有來自 /callback 的 Post Request
 @app.route("/callback", methods=['POST'])
@@ -48,10 +48,7 @@ def callback():
 @handler.add(MessageEvent, message=TextMessage)
 def handle_message(event):
     msg = event.message.text
-    if '最新合作廠商' in msg:
-        message = imagemap_message()
-        line_bot_api.reply_message(event.reply_token, message)
-    elif '最新活動訊息' in msg:
+    if '我想看電影' in msg:
         message = buttons_message()
         line_bot_api.reply_message(event.reply_token, message)
     elif '註冊會員' in msg:
@@ -62,9 +59,6 @@ def handle_message(event):
         line_bot_api.reply_message(event.reply_token, message)
     elif '圖片畫廊' in msg:
         message = test()
-        line_bot_api.reply_message(event.reply_token, message)
-    elif '功能列表' in msg:
-        message = function_list()
         line_bot_api.reply_message(event.reply_token, message)
     else:
         message = TextSendMessage(text=msg)
