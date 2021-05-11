@@ -13,8 +13,6 @@ from linebot.models import *
 from message import *
 
 
-
-
 import tempfile, os
 import datetime
 import time
