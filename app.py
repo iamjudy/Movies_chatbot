@@ -9,17 +9,16 @@ from linebot.exceptions import (
 from linebot.models import *
 
 
-#======這裡是呼叫的檔案內容=====
-from message import *
-from new import *
-from Function import *
-#======這裡是呼叫的檔案內容=====
 
-#======python的函數庫==========
+from message import *
+
+
+
+
 import tempfile, os
 import datetime
 import time
-#======python的函數庫==========
+
 
 app = Flask(__name__)
 static_tmp_path = os.path.join(os.path.dirname(__file__), 'static', 'tmp')
@@ -56,9 +55,6 @@ def handle_message(event):
         line_bot_api.reply_message(event.reply_token, message)
     elif '旋轉木馬' in msg:
         message = Carousel_Template()
-        line_bot_api.reply_message(event.reply_token, message)
-    elif '圖片畫廊' in msg:
-        message = test()
         line_bot_api.reply_message(event.reply_token, message)
     else:
         message = TextSendMessage(text=msg)
