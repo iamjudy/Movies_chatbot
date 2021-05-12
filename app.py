@@ -22,7 +22,7 @@ Spider='1：Spider-Man 2 \n2：Spider-Man \n3：Oz: The Great and Powerful \n4�
 Mad='1：Damnation Alley \n2：The Blood of Heroes \n3：The Time Machine \n4：Mad Max Beyond Thunderdome\n5：Battle for the Planet of the Apes'
 Skyfall='1：Spectre \n2：Quantum of Solace \n3：Mission: Impossible - Rogue Nation \n4：Tomorrow Never Dies\n5：Casino Royale'
 
-Witch='1：Book of Shadows: Blair Witch 2 \n2：The Blair Witch Project \n3：Saw VI \n4：Truth or Dare\n5：The Unborn'
+Witch='1：Book of Shadows: Blair Witch \n2：The Blair Witch Project \n3：Saw VI \n4：Truth or Dare\n5：The Unborn'
 Aliens='1：Alien \n2：Unnatural \n3：The Abyss \n4：The Terminator\n5：Alien: Resurrection'
 Mama='1：Gods of Egypt \n2：Headhunters \n3：Lesbian Vampire Killers \n4：American Beast\n5：Teeth and Blood'
 

@@ -127,7 +127,7 @@ def Carousel_Template_Horror():
                     ]
                 ),
                 CarouselColumn(
-                    thumbnail_image_url='https://cdn.shopify.com/s/files/1/1416/8662/products/aliens_1986-french-original_film_art_1200x.jpg?v=1615492948',
+                    thumbnail_image_url='http://pic.pimg.tw/chrisbalboa/9384d5e850d6c586eefda784ab375ade.jpg',
                     title='Aliens',
                     text='1986年的美國科幻恐怖片，導演是James Cameron！',
                     actions=[
