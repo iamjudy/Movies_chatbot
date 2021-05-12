@@ -30,6 +30,9 @@ Spirited='1：Howls Moving Castle \n2：Oz: The Great and Powerful \n3：The Thi
 Inside='1：Me You and Five Bucks \n2：I Married a Strange Person! \n3：Anywhere But Here \n4：The Cookout\n5：Up'
 Ratatouille='1：Meet the Deedles \n2：Alpha and Omega: The Legend of the Saw Tooth Cave \n3：Rugrats in Paris: The Movie \n4：The Nut Job\n5：The Rugrats Movie'
 
+Before='1：Me You and Five Bucks \n2：The Great Gatsby \n3：Lolita \n4：The Shipping News\n5：Atonement'
+Begin='1：Down & Out With The Dolls \n2：Me You and Five Bucks \n3：There is Always Woodstock \n4：Along the Roadside\n5：Just Like Heaven'
+Holiday='1：Bridget Jones Diary \n2：Me You and Five Bucks \n3：What Women Want \n4：Bridget Jones: The Edge of Reason\n5： The Sweetest Thing'
 
 
 
@@ -79,6 +82,9 @@ def handle_message(event):
     elif 'Animation' in msg:
         message = Carousel_Template_Animation()
         line_bot_api.reply_message(event.reply_token, message)
+    elif 'Romance' in msg:
+        message = Carousel_Template_Romance()
+        line_bot_api.reply_message(event.reply_token, message)
     ###
     elif 'Spider' in msg:
         message = TextSendMessage(text=Spider)
@@ -108,6 +114,16 @@ def handle_message(event):
         line_bot_api.reply_message(event.reply_token, message)
     elif 'Ratatouille' in msg:
         message = TextSendMessage(text=Ratatouille)
+        line_bot_api.reply_message(event.reply_token, message)
+    ###
+    elif 'Before' in msg:
+        message = TextSendMessage(text=Before)
+        line_bot_api.reply_message(event.reply_token, message)
+    elif 'Begin' in msg:
+        message = TextSendMessage(text=Begin)
+        line_bot_api.reply_message(event.reply_token, message)
+    elif 'Holiday' in msg:
+        message = TextSendMessage(text=Holiday)
         line_bot_api.reply_message(event.reply_token, message)
     ###
     else:

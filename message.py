@@ -162,7 +162,7 @@ def Carousel_Template_Animation():
                 CarouselColumn(
                     thumbnail_image_url='https://bbcdn.nouse.co.uk/file/nousePublicBackendUploads/db/webUploads/public/ARTICLE-THUMBNAIL/OrFspq6CmDYeGgq%20Screenshot%202019-11-14%20at%2018.31.01_large.png',
                     title='Spirited Away',
-                    text='神隱少女，一部警惕我們不要貪吃的故事。',
+                    text='一部警惕我們不要貪吃的故事。',
                     actions=[
                         MessageTemplateAction(
                             label='推薦類似這部ㄉ',
@@ -189,6 +189,49 @@ def Carousel_Template_Animation():
                         MessageTemplateAction(
                             label='推薦類似這部ㄉ',
                             text='Ratatouille'
+                        )
+                    ]
+                )
+            ]
+        )
+    )
+    return message
+
+def Carousel_Template_Romance():
+    message = TemplateSendMessage(
+        alt_text='Romance 浪漫類推薦',
+        template=CarouselTemplate(
+            columns=[
+                CarouselColumn(
+                    thumbnail_image_url='https://variety.com/wp-content/uploads/2016/05/me-before-you-2.jpg',
+                    title='Me Before You',
+                    text='權力遊戲的女主角演得歐～',
+                    actions=[
+                        MessageTemplateAction(
+                            label='推薦類似這部ㄉ',
+                            text='Me Before You'
+                        )
+                    ]
+                ),
+                CarouselColumn(
+                    thumbnail_image_url='https://i0.wp.com/char-lifestyle.com/wp-content/uploads/2020/08/begin-again-movie-poster-2.jpg',
+                    title='Begin Again',
+                    text='誒，這不是亞當李維嗎？',
+                    actions=[
+                        MessageTemplateAction(
+                            label='推薦類似這部ㄉ',
+                            text='Begin Again'
+                        )
+                    ]
+                ),
+                CarouselColumn(
+                    thumbnail_image_url='https://hookedonhouses.net/wp-content/uploads/2009/01/The-Holiday-DVD-cover.jpg',
+                    title='The Holiday',
+                    text='戀愛沒有假期的 The Holiday。',
+                    actions=[
+                        MessageTemplateAction(
+                            label='推薦類似這部ㄉ',
+                            text='The Holiday'
                         )
                     ]
                 )
