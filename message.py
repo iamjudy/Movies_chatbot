@@ -239,3 +239,47 @@ def Carousel_Template_Romance():
         )
     )
     return message
+
+
+def Carousel_Template_fiction():
+    message = TemplateSendMessage(
+        alt_text='Science fiction 科幻類推薦',
+        template=CarouselTemplate(
+            columns=[
+                CarouselColumn(
+                    thumbnail_image_url='https://images-na.ssl-images-amazon.com/images/S/pv-target-images/c79cb951b771c38dcfb784da35cb617649f0a7699e20842b119c2e7eace7d47e._RI_V_TTW_.jpg',
+                    title='Men in Black II',
+                    text='人類大戰外星生物！',
+                    actions=[
+                        MessageTemplateAction(
+                            label='推薦類似這部ㄉ',
+                            text='Men in Black II'
+                        )
+                    ]
+                ),
+                CarouselColumn(
+                    thumbnail_image_url='https://image.presslogic.com/holiday.presslogic.com/wp-content/uploads/2018/08/Inception-8.jpg',
+                    title='Inception',
+                    text='夢中夢中夢中夢中夢中夢中夢？',
+                    actions=[
+                        MessageTemplateAction(
+                            label='推薦類似這部ㄉ',
+                            text='Inception'
+                        )
+                    ]
+                ),
+                CarouselColumn(
+                    thumbnail_image_url='https://www.overthinkingit.com/wp-content/uploads/2010/01/Avatar-Sucks.jpg',
+                    title='Avatar',
+                    text='藍藍的你我他。',
+                    actions=[
+                        MessageTemplateAction(
+                            label='推薦類似這部ㄉ',
+                            text='Avatar'
+                        )
+                    ]
+                )
+            ]
+        )
+    )
+    return message

@@ -34,6 +34,9 @@ Before='1：Me You and Five Bucks \n2：The Great Gatsby \n3：Lolita \n4：The 
 Begin='1：Down & Out With The Dolls \n2：Me You and Five Bucks \n3：There is Always Woodstock \n4：Along the Roadside\n5：Just Like Heaven'
 Holiday='1：Bridget Jones Diary \n2：Me You and Five Bucks \n3：What Women Want \n4：Bridget Jones: The Edge of Reason\n5： The Sweetest Thing'
 
+Black='1：Men in Black \n2：Men in Black 3 \n3：Wild Wild West \n4：Bad Boys II\n5： Charlies Angels: Full Throttle'
+Inception='1：Looper \n2：Premium Rush \n3：Timecop \n4：The One\n5：Surrogates'
+Avatar='1：Clash of the Titans \n2：The Mummy: Tomb of the Dragon Emperor \n3：The Monkey King 2 \n4：G-Force\n5： The Time Machine'
 
 
 app = Flask(__name__)
@@ -85,6 +88,9 @@ def handle_message(event):
     elif 'Romance' in msg:
         message = Carousel_Template_Romance()
         line_bot_api.reply_message(event.reply_token, message)
+    elif 'fiction' in msg:
+        message = Carousel_Template_fiction()
+        line_bot_api.reply_message(event.reply_token, message)
     ###
     elif 'Spider' in msg:
         message = TextSendMessage(text=Spider)
@@ -124,6 +130,16 @@ def handle_message(event):
         line_bot_api.reply_message(event.reply_token, message)
     elif 'Holiday' in msg:
         message = TextSendMessage(text=Holiday)
+        line_bot_api.reply_message(event.reply_token, message)
+    ###
+    elif 'Black' in msg:
+        message = TextSendMessage(text=Black)
+        line_bot_api.reply_message(event.reply_token, message)
+    elif 'Inception' in msg:
+        message = TextSendMessage(text=Inception)
+        line_bot_api.reply_message(event.reply_token, message)
+    elif 'Avatar' in msg:
+        message = TextSendMessage(text=Avatar)
         line_bot_api.reply_message(event.reply_token, message)
     ###
     else:
