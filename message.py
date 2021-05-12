@@ -77,7 +77,7 @@ def Carousel_Template():
                     text='我說的是2007版本，沒有Tom Holland那部。',
                     actions=[
                         MessageTemplateAction(
-                            label='我都看這種',
+                            label='推薦類似這部ㄉ',
                             text='Spider-Man 3'
                         )
                     ]
@@ -87,17 +87,9 @@ def Carousel_Template():
                     title='這是第二塊模板',
                     text='副標題可以自己改',
                     actions=[
-                        PostbackTemplateAction(
-                            label='回傳一個訊息',
-                            data='這是ID=2'
-                        ),
                         MessageTemplateAction(
                             label='用戶發送訊息',
                             text='我知道這是2'
-                        ),
-                        URITemplateAction(
-                            label='進入2的網頁',
-                            uri='https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Number_2_in_light_blue_rounded_square.svg/200px-Number_2_in_light_blue_rounded_square.svg.png'
                         )
                     ]
                 ),
@@ -106,17 +98,9 @@ def Carousel_Template():
                     title='這是第三個模塊',
                     text='最多可以放十個',
                     actions=[
-                        PostbackTemplateAction(
-                            label='回傳一個訊息',
-                            data='這是ID=3'
-                        ),
                         MessageTemplateAction(
                             label='用戶發送訊息',
                             text='我知道這是3'
-                        ),
-                        URITemplateAction(
-                            label='uri2',
-                            uri='https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Number_3_in_yellow_rounded_square.svg/200px-Number_3_in_yellow_rounded_square.svg.png'
                         )
                     ]
                 )
