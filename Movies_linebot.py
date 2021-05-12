@@ -9,11 +9,6 @@ from sklearn.metrics.pairwise import linear_kernel, cosine_similarity
 import warnings; warnings.simplefilter('ignore')
 
 
-
-import pandas as pd
-
-
-
 df1=pd.read_csv('./tmdb_5000_credits.csv')
 df2=pd.read_csv('./tmdb_5000_movies.csv')
 
