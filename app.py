@@ -38,6 +38,10 @@ Black='1：Men in Black \n2：Men in Black 3 \n3：Wild Wild West \n4：Bad Boys
 Inception='1：Looper \n2：Premium Rush \n3：Timecop \n4：The One\n5：Surrogates'
 Avatar='1：Clash of the Titans \n2：The Mummy: Tomb of the Dragon Emperor \n3：The Monkey King 2 \n4：G-Force\n5： The Time Machine'
 
+Godfather='1：The Godfather: Part III \n2：The Godfather: Part II \n3：Amidst the Devils Wings \n4：The Son of No One\n5： Apocalypse Now'
+Redemption='1：Dark Blue \n2：Witness \n3： Amidst the Devils Wings \n4：Dead Man Walking\n5：The Hudsucker Proxy'
+Imitation='1：The Duchess \n2：The Fifth Estate\n3：Milk \n4： A Dangerous Method\n5： The Railway Man'
+
 
 app = Flask(__name__)
 static_tmp_path = os.path.join(os.path.dirname(__file__), 'static', 'tmp')
@@ -91,6 +95,9 @@ def handle_message(event):
     elif 'fiction' in msg:
         message = Carousel_Template_fiction()
         line_bot_api.reply_message(event.reply_token, message)
+    elif 'Drama' in msg:
+        message = Carousel_Template_drama()
+        line_bot_api.reply_message(event.reply_token, message)
     ###
     elif 'Spider' in msg:
         message = TextSendMessage(text=Spider)
@@ -140,6 +147,16 @@ def handle_message(event):
         line_bot_api.reply_message(event.reply_token, message)
     elif 'Avatar' in msg:
         message = TextSendMessage(text=Avatar)
+        line_bot_api.reply_message(event.reply_token, message)
+    ###
+    elif 'Godfather' in msg:
+        message = TextSendMessage(text=Godfather)
+        line_bot_api.reply_message(event.reply_token, message)
+    elif 'Redemption' in msg:
+        message = TextSendMessage(text=Redemption)
+        line_bot_api.reply_message(event.reply_token, message)
+    elif 'Imitation' in msg:
+        message = TextSendMessage(text=Imitation)
         line_bot_api.reply_message(event.reply_token, message)
     ###
     else:

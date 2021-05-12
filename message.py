@@ -283,3 +283,47 @@ def Carousel_Template_fiction():
         )
     )
     return message
+
+
+def Carousel_Template_drama():
+    message = TemplateSendMessage(
+        alt_text='Drama 劇情類推薦',
+        template=CarouselTemplate(
+            columns=[
+                CarouselColumn(
+                    thumbnail_image_url='https://lh3.googleusercontent.com/proxy/s3pXR5F4mMe2p5IzbPUqCGiuKOSTZami6nJyQevd5wSnehDOK9Q0zOyxayfjmEUj7JDGF0JzMXB8CfVspiCiCcHBsKyGD9LAfGpU9AH048R_QorYo3Ugc9bc',
+                    title='The Godfather',
+                    text='經典黑社會幫派電影！',
+                    actions=[
+                        MessageTemplateAction(
+                            label='推薦類似這部ㄉ',
+                            text='The Godfather'
+                        )
+                    ]
+                ),
+                CarouselColumn(
+                    thumbnail_image_url='https://lh3.googleusercontent.com/proxy/twxBLWuy-0ZbXc5zLK8O3HMBRXtxSPyR2xHqFB490nQGYBHAGVAhgXxUh1RQKC4Gp7YmQYU1y55uF6HMEJW--qeSYyzsPnRhr_dme90W-S7iBv3rLR54ui3X5bbLLwTsbEaIOHYU',
+                    title='The Shawshank Redemption',
+                    text='IMDb第一名，我看了至少三遍 ><',
+                    actions=[
+                        MessageTemplateAction(
+                            label='推薦類似這部ㄉ',
+                            text='The Shawshank Redemption'
+                        )
+                    ]
+                ),
+                CarouselColumn(
+                    thumbnail_image_url='https://www.scoonews.com/uploads/news_images/115837302541583730254.jpg',
+                    title='The Imitation Game',
+                    text='Benedict Cumberbatch 不只是 Sherlock！',
+                    actions=[
+                        MessageTemplateAction(
+                            label='推薦類似這部ㄉ',
+                            text='The Imitation Game'
+                        )
+                    ]
+                )
+            ]
+        )
+    )
+    return message
