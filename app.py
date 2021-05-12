@@ -96,7 +96,7 @@ def handle_message(event):
         message = Carousel_Template_fiction()
         line_bot_api.reply_message(event.reply_token, message)
     elif 'Drama' in msg:
-        message = Carousel_Template_drama()
+        message = Carousel_Template_Drama()
         line_bot_api.reply_message(event.reply_token, message)
     ###
     elif 'Spider' in msg:

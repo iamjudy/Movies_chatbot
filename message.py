@@ -291,7 +291,7 @@ def Carousel_Template_Drama():
         template=CarouselTemplate(
             columns=[
                 CarouselColumn(
-                    thumbnail_image_url='http://3.bp.blogspot.com/-R8lX5VdRmaM/UtLTLe8VmGI/AAAAAAAAGLI/KEGW4YnxGd4/s1600/godfather01.jpg',
+                    thumbnail_image_url='https://image.presslogic.com/holiday.presslogic.com/wp-content/uploads/2018/08/Inception-8.jpg',
                     title='The Godfather',
                     text='經典黑社會幫派電影！',
                     actions=[
@@ -302,7 +302,7 @@ def Carousel_Template_Drama():
                     ]
                 ),
                 CarouselColumn(
-                    thumbnail_image_url='https://www.koin.com/wp-content/uploads/sites/10/2019/08/shawshank.jpg',
+                    thumbnail_image_url='https://image.presslogic.com/holiday.presslogic.com/wp-content/uploads/2018/08/Inception-8.jpg',
                     title='The Shawshank Redemption',
                     text='IMDb第一名，我看了至少三遍 ><',
                     actions=[
@@ -313,7 +313,7 @@ def Carousel_Template_Drama():
                     ]
                 ),
                 CarouselColumn(
-                    thumbnail_image_url='https://www.scoonews.com/uploads/news_images/115837302541583730254.jpg',
+                    thumbnail_image_url='https://image.presslogic.com/holiday.presslogic.com/wp-content/uploads/2018/08/Inception-8.jpg',
                     title='The Imitation Game',
                     text='他不是 Sherlock，他是Turing！',
                     actions=[
