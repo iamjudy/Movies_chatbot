@@ -43,8 +43,8 @@ def buttons_message2():
             text='選個電影種類，讓我更好推薦你！',
             actions=[
                 MessageTemplateAction(
-                    label='Darma 劇情',
-                    text='Darma 劇情'
+                    label='Drama 劇情',
+                    text='Drama 劇情'
                 ),
                 MessageTemplateAction(
                     label='Science fiction 科幻',
@@ -285,7 +285,7 @@ def Carousel_Template_fiction():
     return message
 
 
-def Carousel_Template_drama():
+def Carousel_Template_Drama():
     message = TemplateSendMessage(
         alt_text='Drama 劇情類推薦',
         template=CarouselTemplate(
