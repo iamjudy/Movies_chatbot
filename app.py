@@ -57,9 +57,6 @@ def handle_message(event):
     elif 'Action' in msg:
         message = Carousel_Template_Action()
         line_bot_api.reply_message(event.reply_token, message)
-    #elif 'Spider' in msg:
-        #message = get_recommendations(msg)
-        #line_bot_api.reply_message(event.reply_token, message)
     else:
         message = TextSendMessage(text=Default)
         line_bot_api.reply_message(event.reply_token, message)
