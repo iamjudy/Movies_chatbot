@@ -72,9 +72,9 @@ def Carousel_Template():
         template=CarouselTemplate(
             columns=[
                 CarouselColumn(
-                    thumbnail_image_url='https://pics.filmaffinity.com/Spider_Man_3_Spiderman_3-729921442-large.jpg',
+                    thumbnail_image_url='https://2.bp.blogspot.com/-dV1ZUcm5s24/WUb-pLm0A7I/AAAAAAAAP00/yR4Tu87gesEPqn1Ud3VgedgbcLIwXRKeACLcBGAs/s1600/Sfdhgkhyjuop3.jpg',
                     title='Spider-Man 3',
-                    text='我說的是2007版本，沒有Tom Holland那部。',
+                    text='我說的是2007版本，沒有Tom Holland。',
                     actions=[
                         MessageTemplateAction(
                             label='推薦類似這部ㄉ',
@@ -83,13 +83,13 @@ def Carousel_Template():
                     ]
                 ),
                 CarouselColumn(
-                    thumbnail_image_url='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuo7n2_HNSFuT3T7Z9PUZmn1SDM6G6-iXfRC3FxdGTj7X1Wr0RzA',
-                    title='這是第二塊模板',
-                    text='副標題可以自己改',
+                    thumbnail_image_url='https://upload.wikimedia.org/wikipedia/zh/9/92/Mad_Max_Fury_Road_Soundtrack.jpg',
+                    title='Mad Max: Fury Road',
+                    text='瘋狂麥斯：憤怒道(反烏托邦題材！)',
                     actions=[
                         MessageTemplateAction(
-                            label='用戶發送訊息',
-                            text='我知道這是2'
+                            label='推薦類似這部ㄉ',
+                            text='Mad Max: Fury Road'
                         )
                     ]
                 ),
