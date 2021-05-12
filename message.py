@@ -116,7 +116,7 @@ def Carousel_Template_Horror():
         template=CarouselTemplate(
             columns=[
                 CarouselColumn(
-                    thumbnail_image_url='http://manapop.com/wp-content/uploads/2016/07/the-witch-wide-1.jpg',
+                    thumbnail_image_url='https://2.bp.blogspot.com/-dV1ZUcm5s24/WUb-pLm0A7I/AAAAAAAAP00/yR4Tu87gesEPqn1Ud3VgedgbcLIwXRKeACLcBGAs/s1600/Sfdhgkhyjuop3.jpg',
                     title='The Witch',
                     text='《后翼棄兵》女主演的，黑暗又抑鬱。',
                     actions=[
@@ -127,7 +127,7 @@ def Carousel_Template_Horror():
                     ]
                 ),
                 CarouselColumn(
-                    thumbnail_image_url='https://2.bp.blogspot.com/-dV1ZUcm5s24/WUb-pLm0A7I/AAAAAAAAP00/yR4Tu87gesEPqn1Ud3VgedgbcLIwXRKeACLcBGAs/s1600/Sfdhgkhyjuop3.jpg',
+                    thumbnail_image_url='https://cdn.shopify.com/s/files/1/1416/8662/products/aliens_1986-french-original_film_art_1200x.jpg?v=1615492948',
                     title='Aliens',
                     text='1986年的美國科幻恐怖片，導演是James Cameron！',
                     actions=[
