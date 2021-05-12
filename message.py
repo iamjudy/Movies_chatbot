@@ -108,3 +108,47 @@ def Carousel_Template_Action():
         )
     )
     return message
+
+
+def Carousel_Template_Horror():
+    message = TemplateSendMessage(
+        alt_text='Horror 恐怖類推薦',
+        template=CarouselTemplate(
+            columns=[
+                CarouselColumn(
+                    thumbnail_image_url='https://images-na.ssl-images-amazon.com/images/I/41nq0AJrcrL._AC_.jpg',
+                    title='The Witch',
+                    text='《后翼棄兵》女主演的，黑暗又抑鬱。',
+                    actions=[
+                        MessageTemplateAction(
+                            label='推薦類似這部ㄉ',
+                            text='The Witch'
+                        )
+                    ]
+                ),
+                CarouselColumn(
+                    thumbnail_image_url='https://cdn.shopify.com/s/files/1/1416/8662/products/aliens_1986-french-original_film_art_1200x.jpg?v=1615492948',
+                    title='Aliens',
+                    text='1986年的美國科幻恐怖片，導演是James Cameron！',
+                    actions=[
+                        MessageTemplateAction(
+                            label='推薦類似這部ㄉ',
+                            text='Aliens'
+                        )
+                    ]
+                ),
+                CarouselColumn(
+                    thumbnail_image_url='http://pic.pimg.tw/luketsu/1368283303-2289546830.jpg',
+                    title='Mama',
+                    text='台灣翻《母侵》，大陸翻《媽媽》ㄛ',
+                    actions=[
+                        MessageTemplateAction(
+                            label='推薦類似這部ㄉ',
+                            text='Mama'
+                        )
+                    ]
+                )
+            ]
+        )
+    )
+    return message
