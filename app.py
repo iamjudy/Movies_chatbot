@@ -18,8 +18,8 @@ import time
 
 Default='感謝您的訊息！\n很抱歉，本帳號沒有那麼聰明QQ，請輸入神秘的 keyword 來開啟對話哦。'
 Spider='1：Spider-Man 2 \n2：Spider-Man \n3：Oz: The Great and Powerful \n4：Prince of Persia: The Sands of Time\n5：The Mummy: Tomb of the Dragon Emperor'
-
-
+Mad='1：Damnation Alley \n2：The Blood of Heroes \n3：The Time Machine \n4：Mad Max Beyond Thunderdome\n5：Battle for the Planet of the Apes'
+Skyfall='1：Spectre \n2：Quantum of Solace \n3：Mission: Impossible - Rogue Nation \n4：Tomorrow Never Dies\n5：Casino Royale'
 
 app = Flask(__name__)
 static_tmp_path = os.path.join(os.path.dirname(__file__), 'static', 'tmp')
@@ -62,6 +62,12 @@ def handle_message(event):
         line_bot_api.reply_message(event.reply_token, message)
     elif 'Spider' in msg:
         message = TextSendMessage(text=Spider)
+        line_bot_api.reply_message(event.reply_token, message)
+    elif 'Mad' in msg:
+        message = TextSendMessage(text=Mad)
+        line_bot_api.reply_message(event.reply_token, message)
+    elif 'Skyfall' in msg:
+        message = TextSendMessage(text=Skyfall)
         line_bot_api.reply_message(event.reply_token, message)
     else:
         message = TextSendMessage(text=Default)
