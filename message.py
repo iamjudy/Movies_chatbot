@@ -152,3 +152,47 @@ def Carousel_Template_Horror():
         )
     )
     return message
+
+
+def Carousel_Template_Horror():
+    message = TemplateSendMessage(
+        alt_text='Animation 動畫類推薦',
+        template=CarouselTemplate(
+            columns=[
+                CarouselColumn(
+                    thumbnail_image_url='https://www.slashfilm.com/wp/wp-content/images/spirited-away-3-e1614356820324.jpg',
+                    title='Spirited Away',
+                    text='神隱少女，一部警惕我們不要貪吃的故事。',
+                    actions=[
+                        MessageTemplateAction(
+                            label='推薦類似這部ㄉ',
+                            text='Spirited Away'
+                        )
+                    ]
+                ),
+                CarouselColumn(
+                    thumbnail_image_url='https://static.newmobilelife.com/wp-content/uploads/2015/08/InsideOut556500e6a2be0-2040.0.jpg',
+                    title='Inside Out',
+                    text='Who is the best in every way, and wants to sing this song to say Bing Bong, Bing Bong!',
+                    actions=[
+                        MessageTemplateAction(
+                            label='推薦類似這部ㄉ',
+                            text='Inside Out'
+                        )
+                    ]
+                ),
+                CarouselColumn(
+                    thumbnail_image_url='http://gonewiththetwins.com/new/wp-content/uploads/2016/06/ratatouille.jpg',
+                    title='Ratatouille',
+                    text='其實這部電影叫：普羅旺斯雜燴。',
+                    actions=[
+                        MessageTemplateAction(
+                            label='推薦類似這部ㄉ',
+                            text='Ratatouille'
+                        )
+                    ]
+                )
+            ]
+        )
+    )
+    return message
