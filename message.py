@@ -96,7 +96,7 @@ def Carousel_Template():
                 CarouselColumn(
                     thumbnail_image_url='https://ethan55.com/wp-content/uploads/86a6b2d8da6417803bf2f1a89e957f78.jpg',
                     title='Skyfall',
-                    text='主題曲是Adele唱的，James Bond!',
+                    text='主題曲是 Adele 唱的，James Bond!',
                     actions=[
                         MessageTemplateAction(
                             label='推薦類似這部ㄉ',
