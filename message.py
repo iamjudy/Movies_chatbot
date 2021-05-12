@@ -291,7 +291,7 @@ def Carousel_Template_Drama():
         template=CarouselTemplate(
             columns=[
                 CarouselColumn(
-                    thumbnail_image_url='https://image.presslogic.com/holiday.presslogic.com/wp-content/uploads/2018/08/Inception-8.jpg',
+                    thumbnail_image_url='https://www.traveltaormina.com/images/escursioni/the-godfather-tour-from-taormina.jpg',
                     title='The Godfather',
                     text='經典黑社會幫派電影！',
                     actions=[
