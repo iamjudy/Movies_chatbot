@@ -9,7 +9,7 @@ from linebot.exceptions import (
 from linebot.models import *
 
 from message import *
-from Movies_linebot import *
+
 
 
 import tempfile, os
