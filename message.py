@@ -18,16 +18,45 @@ def buttons_message():
                     text='Action 動作'
                 ),
                 MessageTemplateAction(
-                    label='Adventure 冒險',
-                    text='Adventure 冒險'
+                    label='Horror 恐怖',
+                    text='Horror 恐怖'
                 ),
                 MessageTemplateAction(
                     label='Animation 動畫',
                     text='Animation 動畫'
                 ),
                 MessageTemplateAction(
-                    label="Drama 劇情",
-                    text="Drama 劇情"
+                    label="蛤～還有勒",
+                    text="蛤～還有勒"
+                )
+            ]
+        )
+    )
+    return message
+
+def buttons_message2():
+    message = TemplateSendMessage(
+        alt_text='那這些呢',
+        template=ButtonsTemplate(
+            thumbnail_image_url="https://i.imgur.com/Ucf3cqF.jpg",
+            title='今晚，我想看來點？',
+            text='選個電影種類，讓我更好推薦你！',
+            actions=[
+                MessageTemplateAction(
+                    label='Darma 劇情',
+                    text='Darma 劇情'
+                ),
+                MessageTemplateAction(
+                    label='Science fiction 科幻',
+                    text='Science fiction 科幻'
+                ),
+                MessageTemplateAction(
+                    label='Romance 浪漫',
+                    text='Romance 浪漫'
+                ),
+                MessageTemplateAction(
+                    label="我都不要看！",
+                    text="我都不要看！"
                 )
             ]
         )
