@@ -313,7 +313,7 @@ def Carousel_Template_Drama():
                     ]
                 ),
                 CarouselColumn(
-                    thumbnail_image_url='http://www.winwallpapers.net/w1/2015/02/The-Imitation-Game-Wallpapers-10.jpg',
+                    thumbnail_image_url='https://images8.alphacoders.com/823/823657.jpg',
                     title='The Imitation Game',
                     text='他不是 Sherlock，他是Turing！',
                     actions=[
