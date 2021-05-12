@@ -138,7 +138,7 @@ def Carousel_Template_Horror():
                     ]
                 ),
                 CarouselColumn(
-                    thumbnail_image_url='https://2.bp.blogspot.com/-dV1ZUcm5s24/WUb-pLm0A7I/AAAAAAAAP00/yR4Tu87gesEPqn1Ud3VgedgbcLIwXRKeACLcBGAs/s1600/Sfdhgkhyjuop3.jpg',
+                    thumbnail_image_url='https://keithandthemovies.files.wordpress.com/2013/01/mama-poster.jpg',
                     title='Mama',
                     text='台灣翻《母侵》，大陸翻《媽媽》ㄛ',
                     actions=[
