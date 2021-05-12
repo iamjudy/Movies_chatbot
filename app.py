@@ -56,7 +56,7 @@ def handle_message(event):
         message = Carousel_Template()
         line_bot_api.reply_message(event.reply_token, message)
     else:
-        message = TextSendMessage(text=msg)
+        message = TextSendMessage(text=Defalut)
         line_bot_api.reply_message(event.reply_token, message)
 
 import os
