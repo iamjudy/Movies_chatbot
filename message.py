@@ -74,7 +74,7 @@ def Carousel_Template():
                 CarouselColumn(
                     thumbnail_image_url='https://2.bp.blogspot.com/-dV1ZUcm5s24/WUb-pLm0A7I/AAAAAAAAP00/yR4Tu87gesEPqn1Ud3VgedgbcLIwXRKeACLcBGAs/s1600/Sfdhgkhyjuop3.jpg',
                     title='Spider-Man 3',
-                    text='我說的是2007版本，沒有Tom Holland。',
+                    text='我說的是 2007版本，沒有 Tom Holland。',
                     actions=[
                         MessageTemplateAction(
                             label='推薦類似這部ㄉ',
@@ -85,7 +85,7 @@ def Carousel_Template():
                 CarouselColumn(
                     thumbnail_image_url='https://upload.wikimedia.org/wikipedia/zh/9/92/Mad_Max_Fury_Road_Soundtrack.jpg',
                     title='Mad Max: Fury Road',
-                    text='瘋狂麥斯：憤怒道(反烏托邦題材！)',
+                    text='瘋狂麥斯：憤怒道（ 反烏托邦題材！)',
                     actions=[
                         MessageTemplateAction(
                             label='推薦類似這部ㄉ',
@@ -94,13 +94,13 @@ def Carousel_Template():
                     ]
                 ),
                 CarouselColumn(
-                    thumbnail_image_url='https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Number_3_in_yellow_rounded_square.svg/200px-Number_3_in_yellow_rounded_square.svg.png',
-                    title='這是第三個模塊',
-                    text='最多可以放十個',
+                    thumbnail_image_url='https://ethan55.com/wp-content/uploads/86a6b2d8da6417803bf2f1a89e957f78.jpg',
+                    title='Skyfall',
+                    text='主題曲是Adele唱的，James Bond!',
                     actions=[
                         MessageTemplateAction(
-                            label='用戶發送訊息',
-                            text='我知道這是3'
+                            label='推薦類似這部ㄉ',
+                            text='Skyfall'
                         )
                     ]
                 )
