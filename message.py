@@ -154,7 +154,7 @@ def Carousel_Template_Horror():
     return message
 
 
-def Carousel_Template_Horror():
+def Carousel_Template_Animation():
     message = TemplateSendMessage(
         alt_text='Animation 動畫類推薦',
         template=CarouselTemplate(
