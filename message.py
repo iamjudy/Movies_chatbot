@@ -116,7 +116,7 @@ def Carousel_Template_Horror():
         template=CarouselTemplate(
             columns=[
                 CarouselColumn(
-                    thumbnail_image_url='https://images-na.ssl-images-amazon.com/images/I/41nq0AJrcrL._AC_.jpg',
+                    thumbnail_image_url='https://2.bp.blogspot.com/-dV1ZUcm5s24/WUb-pLm0A7I/AAAAAAAAP00/yR4Tu87gesEPqn1Ud3VgedgbcLIwXRKeACLcBGAs/s1600/Sfdhgkhyjuop3.jpg',
                     title='The Witch',
                     text='《后翼棄兵》女主演的，黑暗又抑鬱。',
                     actions=[
@@ -127,7 +127,7 @@ def Carousel_Template_Horror():
                     ]
                 ),
                 CarouselColumn(
-                    thumbnail_image_url='http://pic.pimg.tw/chrisbalboa/9384d5e850d6c586eefda784ab375ade.jpg',
+                    thumbnail_image_url='https://2.bp.blogspot.com/-dV1ZUcm5s24/WUb-pLm0A7I/AAAAAAAAP00/yR4Tu87gesEPqn1Ud3VgedgbcLIwXRKeACLcBGAs/s1600/Sfdhgkhyjuop3.jpg',
                     title='Aliens',
                     text='1986年的美國科幻恐怖片，導演是James Cameron！',
                     actions=[
@@ -138,7 +138,7 @@ def Carousel_Template_Horror():
                     ]
                 ),
                 CarouselColumn(
-                    thumbnail_image_url='http://pic.pimg.tw/luketsu/1368283303-2289546830.jpg',
+                    thumbnail_image_url='https://2.bp.blogspot.com/-dV1ZUcm5s24/WUb-pLm0A7I/AAAAAAAAP00/yR4Tu87gesEPqn1Ud3VgedgbcLIwXRKeACLcBGAs/s1600/Sfdhgkhyjuop3.jpg',
                     title='Mama',
                     text='台灣翻《母侵》，大陸翻《媽媽》ㄛ',
                     actions=[
