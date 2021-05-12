@@ -160,7 +160,7 @@ def Carousel_Template_Animation():
         template=CarouselTemplate(
             columns=[
                 CarouselColumn(
-                    thumbnail_image_url='https://www.slashfilm.com/wp/wp-content/images/spirited-away-3-e1614356820324.jpg',
+                    thumbnail_image_url='https://bbcdn.nouse.co.uk/file/nousePublicBackendUploads/db/webUploads/public/ARTICLE-THUMBNAIL/OrFspq6CmDYeGgq%20Screenshot%202019-11-14%20at%2018.31.01_large.png',
                     title='Spirited Away',
                     text='神隱少女，一部警惕我們不要貪吃的故事。',
                     actions=[
@@ -173,7 +173,7 @@ def Carousel_Template_Animation():
                 CarouselColumn(
                     thumbnail_image_url='https://static.newmobilelife.com/wp-content/uploads/2015/08/InsideOut556500e6a2be0-2040.0.jpg',
                     title='Inside Out',
-                    text='Who is the best in every way, and wants to sing this song to say Bing Bong, Bing Bong!',
+                    text='Bing Bong, Bing Bong!',
                     actions=[
                         MessageTemplateAction(
                             label='推薦類似這部ㄉ',
@@ -182,7 +182,7 @@ def Carousel_Template_Animation():
                     ]
                 ),
                 CarouselColumn(
-                    thumbnail_image_url='http://gonewiththetwins.com/new/wp-content/uploads/2016/06/ratatouille.jpg',
+                    thumbnail_image_url='https://box8in.files.wordpress.com/2017/12/ratatouillle.jpg',
                     title='Ratatouille',
                     text='其實這部電影叫：普羅旺斯雜燴。',
                     actions=[
