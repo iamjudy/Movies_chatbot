@@ -315,7 +315,7 @@ def Carousel_Template_Drama():
                 CarouselColumn(
                     thumbnail_image_url='https://www.scoonews.com/uploads/news_images/115837302541583730254.jpg',
                     title='The Imitation Game',
-                    text='Benedict Cumberbatch 不只是 Sherlock！',
+                    text='他不是 Sherlock，他是Turing！',
                     actions=[
                         MessageTemplateAction(
                             label='推薦類似這部ㄉ',
