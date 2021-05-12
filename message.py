@@ -162,7 +162,7 @@ def Carousel_Template_Animation():
                 CarouselColumn(
                     thumbnail_image_url='https://bbcdn.nouse.co.uk/file/nousePublicBackendUploads/db/webUploads/public/ARTICLE-THUMBNAIL/OrFspq6CmDYeGgq%20Screenshot%202019-11-14%20at%2018.31.01_large.png',
                     title='Spirited Away',
-                    text='一部警惕我們不要貪吃的故事。',
+                    text='一個警惕我們不要貪吃的故事。',
                     actions=[
                         MessageTemplateAction(
                             label='推薦類似這部ㄉ',
@@ -184,7 +184,7 @@ def Carousel_Template_Animation():
                 CarouselColumn(
                     thumbnail_image_url='https://box8in.files.wordpress.com/2017/12/ratatouillle.jpg',
                     title='Ratatouille',
-                    text='其實這部電影叫：普羅旺斯雜燴。',
+                    text='原來這部電影英文叫：普羅旺斯雜燴。',
                     actions=[
                         MessageTemplateAction(
                             label='推薦類似這部ㄉ',
@@ -291,7 +291,7 @@ def Carousel_Template_Drama():
         template=CarouselTemplate(
             columns=[
                 CarouselColumn(
-                    thumbnail_image_url='https://lh3.googleusercontent.com/proxy/s3pXR5F4mMe2p5IzbPUqCGiuKOSTZami6nJyQevd5wSnehDOK9Q0zOyxayfjmEUj7JDGF0JzMXB8CfVspiCiCcHBsKyGD9LAfGpU9AH048R_QorYo3Ugc9bc',
+                    thumbnail_image_url='http://3.bp.blogspot.com/-R8lX5VdRmaM/UtLTLe8VmGI/AAAAAAAAGLI/KEGW4YnxGd4/s1600/godfather01.jpg',
                     title='The Godfather',
                     text='經典黑社會幫派電影！',
                     actions=[
@@ -302,7 +302,7 @@ def Carousel_Template_Drama():
                     ]
                 ),
                 CarouselColumn(
-                    thumbnail_image_url='https://lh3.googleusercontent.com/proxy/twxBLWuy-0ZbXc5zLK8O3HMBRXtxSPyR2xHqFB490nQGYBHAGVAhgXxUh1RQKC4Gp7YmQYU1y55uF6HMEJW--qeSYyzsPnRhr_dme90W-S7iBv3rLR54ui3X5bbLLwTsbEaIOHYU',
+                    thumbnail_image_url='https://www.koin.com/wp-content/uploads/sites/10/2019/08/shawshank.jpg',
                     title='The Shawshank Redemption',
                     text='IMDb第一名，我看了至少三遍 ><',
                     actions=[
