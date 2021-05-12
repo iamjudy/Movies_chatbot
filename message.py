@@ -160,7 +160,7 @@ def Carousel_Template_Animation():
         template=CarouselTemplate(
             columns=[
                 CarouselColumn(
-                    thumbnail_image_url='https://bbcdn.nouse.co.uk/file/nousePublicBackendUploads/db/webUploads/public/ARTICLE-THUMBNAIL/OrFspq6CmDYeGgq%20Screenshot%202019-11-14%20at%2018.31.01_large.png',
+                    thumbnail_image_url='https://inmywordz.com/wp-content/uploads/20171128223023_58.png',
                     title='Spirited Away',
                     text='一個警惕我們不要貪吃的故事。',
                     actions=[
@@ -313,7 +313,7 @@ def Carousel_Template_Drama():
                     ]
                 ),
                 CarouselColumn(
-                    thumbnail_image_url='https://image.presslogic.com/holiday.presslogic.com/wp-content/uploads/2018/08/Inception-8.jpg',
+                    thumbnail_image_url='http://www.winwallpapers.net/w1/2015/02/The-Imitation-Game-Wallpapers-10.jpg',
                     title='The Imitation Game',
                     text='他不是 Sherlock，他是Turing！',
                     actions=[
