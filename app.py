@@ -54,7 +54,7 @@ def handle_message(event):
         message = TextSendMessage(text='那...那我也沒辦法。')
         line_bot_api.reply_message(event.reply_token, message)
     elif 'Action' in msg:
-        message = Carousel_Template()
+        message = Carousel_Template_Action()
         line_bot_api.reply_message(event.reply_token, message)
     else:
         message = TextSendMessage(text=Default)

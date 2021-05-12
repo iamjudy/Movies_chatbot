@@ -66,7 +66,7 @@ def buttons_message2():
 
 #旋轉木馬按鈕訊息介面
 
-def Carousel_Template():
+def Carousel_Template_Action():
     message = TemplateSendMessage(
         alt_text='Action 動作類推薦',
         template=CarouselTemplate(
@@ -108,44 +108,3 @@ def Carousel_Template():
         )
     )
     return message
-
-#TemplateSendMessage - ImageCarouselTemplate(圖片旋轉木馬)
-def image_carousel_message1():
-    message = TemplateSendMessage(
-        alt_text='圖片旋轉木馬',
-        template=ImageCarouselTemplate(
-            columns=[
-                ImageCarouselColumn(
-                    image_url="https://i.imgur.com/uKYgfVs.jpg",
-                    action=URITemplateAction(
-                        label="新鮮水果",
-                        uri="http://img.juimg.com/tuku/yulantu/110709/222-110F91G31375.jpg"
-                    )
-                ),
-                ImageCarouselColumn(
-                    image_url="https://i.imgur.com/QOcAvjt.jpg",
-                    action=URITemplateAction(
-                        label="新鮮蔬菜",
-                        uri="https://cdn.101mediaimage.com/img/file/1410464751urhp5.jpg"
-                    )
-                ),
-                ImageCarouselColumn(
-                    image_url="https://i.imgur.com/Np7eFyj.jpg",
-                    action=URITemplateAction(
-                        label="可愛狗狗",
-                        uri="http://imgm.cnmo-img.com.cn/appimg/screenpic/big/674/673928.JPG"
-                    )
-                ),
-                ImageCarouselColumn(
-                    image_url="https://i.imgur.com/QRIa5Dz.jpg",
-                    action=URITemplateAction(
-                        label="可愛貓咪",
-                        uri="https://m-miya.net/wp-content/uploads/2014/07/0-065-1.min_.jpg"
-                    )
-                )
-            ]
-        )
-    )
-    return message
-
-#關於LINEBOT聊天內容範例
