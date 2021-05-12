@@ -302,7 +302,7 @@ def Carousel_Template_Drama():
                     ]
                 ),
                 CarouselColumn(
-                    thumbnail_image_url='https://image.presslogic.com/holiday.presslogic.com/wp-content/uploads/2018/08/Inception-8.jpg',
+                    thumbnail_image_url='https://media.gq.com.tw/photos/5e4fa1d239abfa00087ac65d/16:9/w_1920,c_limit/FotoJet%20-%202020-02-21T172243.555.jpg',
                     title='The Shawshank Redemption',
                     text='IMDb第一名，我看了至少三遍 ><',
                     actions=[
