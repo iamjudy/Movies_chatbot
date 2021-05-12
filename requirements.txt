@@ -15,4 +15,7 @@ requests==2.25.1
 urllib3==1.26.4
 Werkzeug==1.0.1
 
+numpy==1.6.2
+pandas==0.8.1
+
 # pip3 freeze > requirements.txt
