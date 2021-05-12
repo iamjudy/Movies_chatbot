@@ -15,7 +15,7 @@ import tempfile, os
 import datetime
 import time
 
-Default='感謝您的訊息！\n很抱歉，本帳號沒有那麼聰明QQ，\n請輸入神秘的 keyword 開啟對話。'
+Default='感謝您的訊息！\n很抱歉，本帳號沒有那麼聰明QQ，請輸入神秘的 keyword 開啟對話。'
 
 app = Flask(__name__)
 static_tmp_path = os.path.join(os.path.dirname(__file__), 'static', 'tmp')

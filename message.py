@@ -10,7 +10,7 @@ def buttons_message():
         alt_text='看電影前，先聊個天',
         template=ButtonsTemplate(
             thumbnail_image_url="https://i.imgur.com/Mfs13Tf.jpg",
-            title='今晚，我想看來點？',
+            title='今晚，我想來看點？',
             text='選個電影種類，讓我更好推薦你！',
             actions=[
                 MessageTemplateAction(
@@ -39,7 +39,7 @@ def buttons_message2():
         alt_text='那這些呢',
         template=ButtonsTemplate(
             thumbnail_image_url="https://i.imgur.com/Ucf3cqF.jpg",
-            title='今晚，我想看來點？',
+            title='今晚，我想來看點？',
             text='選個電影種類，讓我更好推薦你！',
             actions=[
                 MessageTemplateAction(
@@ -63,51 +63,22 @@ def buttons_message2():
     )
     return message
 
-#TemplateSendMessage - ConfirmTemplate(確認介面訊息)
-def Confirm_Template():
-
-    message = TemplateSendMessage(
-        alt_text='是否註冊成為會員？',
-        template=ConfirmTemplate(
-            text="是否註冊成為會員？",
-            actions=[
-                PostbackTemplateAction(
-                    label="馬上註冊",
-                    text="現在、立刻、馬上",
-                    data="會員註冊"
-                ),
-                MessageTemplateAction(
-                    label="查詢其他功能",
-                    text="查詢其他功能"
-                )
-            ]
-        )
-    )
-    return message
 
 #旋轉木馬按鈕訊息介面
 
 def Carousel_Template():
     message = TemplateSendMessage(
-        alt_text='一則旋轉木馬按鈕訊息',
+        alt_text='Action 動作類推薦',
         template=CarouselTemplate(
             columns=[
                 CarouselColumn(
-                    thumbnail_image_url='https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Number_1_in_green_rounded_square.svg/200px-Number_1_in_green_rounded_square.svg.png',
-                    title='這是第一塊模板',
-                    text='一個模板可以有三個按鈕',
+                    thumbnail_image_url='https://pics.filmaffinity.com/Spider_Man_3_Spiderman_3-729921442-large.jpg',
+                    title='Spider-Man 3',
+                    text='我說的是2007版本，沒有Tom Holland那部。',
                     actions=[
-                        PostbackTemplateAction(
-                            label='回傳一個訊息',
-                            data='將這個訊息偷偷回傳給機器人'
-                        ),
                         MessageTemplateAction(
-                            label='用戶發送訊息',
-                            text='我知道這是1'
-                        ),
-                        URITemplateAction(
-                            label='進入1的網頁',
-                            uri='https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Number_1_in_green_rounded_square.svg/200px-Number_1_in_green_rounded_square.svg.png'
+                            label='我都看這種',
+                            text='Spider-Man 3'
                         )
                     ]
                 ),
