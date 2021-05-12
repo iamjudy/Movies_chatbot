@@ -1,13 +1,10 @@
 
 import pandas as pd
 import numpy as np
-from scipy import stats
 from ast import literal_eval
 from sklearn.feature_extraction.text import TfidfVectorizer, CountVectorizer
 from sklearn.metrics.pairwise import linear_kernel, cosine_similarity
-from nltk.stem.snowball import SnowballStemmer
-from nltk.stem.wordnet import WordNetLemmatizer
-from nltk.corpus import wordnet
+
 
 import warnings; warnings.simplefilter('ignore')
 
@@ -63,7 +60,6 @@ def get_recommendations(title, cosine_sim=cosine_sim):
 # #### 詞袋模型
 
 
-from ast import literal_eval
 
 features = ['cast', 'crew', 'keywords', 'genres']
 for feature in features:

@@ -1,2 +1,6 @@
 line-bot-sdk
 flask
+pandas==1.0.5
+numpy
+sklearn
+ast
