@@ -9,7 +9,7 @@ def buttons_message():
     message = TemplateSendMessage(
         alt_text='看電影前，先聊個天',
         template=ButtonsTemplate(
-            thumbnail_image_url="https://i.imgur.com/uKYgfVs.jpg",
+            thumbnail_image_url="https://i.imgur.com/Mfs13Tf.jpg",
             title='今晚，我想看來點？',
             text='選個電影種類，讓我更好推薦你！',
             actions=[
