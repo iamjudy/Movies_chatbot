@@ -168,9 +168,9 @@ def handle_message(event):
     elif '可以唷' in msg:
         message1 = TextSendMessage(text=OK)
         message2 = {
-        type: 'sticker',
-        packageId: '789',
-        stickerId: '10856'
+            'type': 'sticker',
+            packageId: '789',
+            stickerId: '10856'
         }
         message = [message1, message2]
         line_bot_api.reply_message(event.reply_token, message)
