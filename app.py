@@ -16,7 +16,7 @@ import tempfile, os
 import datetime
 import time
 
-Default='感謝您的訊息！\n很抱歉，本帳號沒有那麼聰明QQ，請輸入神秘的 keyword 來開啟對話哦。'
+Default='感謝您的訊息！\n很抱歉，本帳號沒有那麼聰明喇，請輸入神秘的 keyword \n來開啟對話哦。'
 
 Spider='1：Spider-Man 2 \n2：Spider-Man \n3：The Sorcerers Apprentice \n4：Prince of Persia: The Sands of Time\n5：The Mummy: Tomb of the Dragon Emperor'
 Mad='1：Damnation Alley \n2：The Blood of Heroes \n3：The Time Machine \n4：Mad Max Beyond Thunderdome\n5：Battle for the Planet of the Apes'
@@ -102,67 +102,103 @@ def handle_message(event):
         message = Carousel_Template_Drama()
         line_bot_api.reply_message(event.reply_token, message)
     ###
+    ###
+    ### 電影舉例
+    ###
     elif 'Spider' in msg:
         message1 = TextSendMessage(text=Spider)
         message2 = Confirm_Template()
         message = [message1, message2]
         line_bot_api.reply_message(event.reply_token, message)
-        
     elif 'Mad' in msg:
-        message = TextSendMessage(text=Mad)
+        message1 = TextSendMessage(text=Mad)
+        message2 = Confirm_Template()
+        message = [message1, message2]
         line_bot_api.reply_message(event.reply_token, message)
     elif 'Skyfall' in msg:
-        message = TextSendMessage(text=Skyfall)
+        message1 = TextSendMessage(text=Skyfall)
+        message2 = Confirm_Template()
+        message = [message1, message2]
         line_bot_api.reply_message(event.reply_token, message)
     ###
     elif 'Witch' in msg:
-        message = TextSendMessage(text=Witch)
+        message1 = TextSendMessage(text=Witch)
+        message2 = Confirm_Template()
+        message = [message1, message2]
         line_bot_api.reply_message(event.reply_token, message)
     elif 'Aliens' in msg:
-        message = TextSendMessage(text=Aliens)
+        message1 = TextSendMessage(text=Aliens)
+        message2 = Confirm_Template()
+        message = [message1, message2]
         line_bot_api.reply_message(event.reply_token, message)
     elif 'Mama' in msg:
-        message = TextSendMessage(text=Mama)
+        message1 = TextSendMessage(text=Mama)
+        message2 = Confirm_Template()
+        message = [message1, message2]
         line_bot_api.reply_message(event.reply_token, message)
     ###
     elif 'Spirited' in msg:
-        message = TextSendMessage(text=Spirited)
+        message1 = TextSendMessage(text=Spirited)
+        message2 = Confirm_Template()
+        message = [message1, message2]
         line_bot_api.reply_message(event.reply_token, message)
     elif 'Inside' in msg:
-        message = TextSendMessage(text=Inside)
+        message1 = TextSendMessage(text=Inside)
+        message2 = Confirm_Template()
+        message = [message1, message2]
         line_bot_api.reply_message(event.reply_token, message)
     elif 'Ratatouille' in msg:
-        message = TextSendMessage(text=Ratatouille)
+        message1 = TextSendMessage(text=Ratatouille)
+        message2 = Confirm_Template()
+        message = [message1, message2]
         line_bot_api.reply_message(event.reply_token, message)
     ###
     elif 'Before' in msg:
-        message = TextSendMessage(text=Before)
+        message1 = TextSendMessage(text=Before)
+        message2 = Confirm_Template()
+        message = [message1, message2]
         line_bot_api.reply_message(event.reply_token, message)
     elif 'Begin' in msg:
-        message = TextSendMessage(text=Begin)
+        message1 = TextSendMessage(text=Begin)
+        message2 = Confirm_Template()
+        message = [message1, message2]
         line_bot_api.reply_message(event.reply_token, message)
     elif 'Holiday' in msg:
-        message = TextSendMessage(text=Holiday)
+        message1 = TextSendMessage(text=Holiday)
+        message2 = Confirm_Template()
+        message = [message1, message2]
         line_bot_api.reply_message(event.reply_token, message)
     ###
     elif 'Black' in msg:
-        message = TextSendMessage(text=Black)
+        message1 = TextSendMessage(text=Black)
+        message2 = Confirm_Template()
+        message = [message1, message2]
         line_bot_api.reply_message(event.reply_token, message)
     elif 'Inception' in msg:
-        message = TextSendMessage(text=Inception)
+        message1 = TextSendMessage(text=Inception)
+        message2 = Confirm_Template()
+        message = [message1, message2]
         line_bot_api.reply_message(event.reply_token, message)
     elif 'Avatar' in msg:
-        message = TextSendMessage(text=Avatar)
+        message1 = TextSendMessage(text=Avatar)
+        message2 = Confirm_Template()
+        message = [message1, message2]
         line_bot_api.reply_message(event.reply_token, message)
     ###
     elif 'Godfather' in msg:
-        message = TextSendMessage(text=Godfather)
+        message1 = TextSendMessage(text=Godfather)
+        message2 = Confirm_Template()
+        message = [message1, message2]
         line_bot_api.reply_message(event.reply_token, message)
     elif 'Redemption' in msg:
-        message = TextSendMessage(text=Redemption)
+        message1 = TextSendMessage(text=Redemption)
+        message2 = Confirm_Template()
+        message = [message1, message2]
         line_bot_api.reply_message(event.reply_token, message)
     elif 'Imitation' in msg:
-        message = TextSendMessage(text=Imitation)
+        message1 = TextSendMessage(text=Imitation)
+        message2 = Confirm_Template()
+        message = [message1, message2]
         line_bot_api.reply_message(event.reply_token, message)
     ###
     elif '可以唷' in msg:
@@ -173,6 +209,7 @@ def handle_message(event):
     elif 'No' in msg:
         message = TextSendMessage(text=NONO)
         message2 = StickerSendMessage(package_id=8525, sticker_id=16581296)
+        message = [message1, message2]
         line_bot_api.reply_message(event.reply_token, message)
     ###
     else:
