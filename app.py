@@ -105,7 +105,12 @@ def handle_message(event):
     elif 'Spider' in msg:
         message1 = TextSendMessage(text=Spider)
         message2 = Confirm_Template()
-        message = [message1, message2]
+        message3 = {
+        "type": "sticker",
+        "packageId": "789",
+        "stickerId": "10856"
+        }
+        message = [message1, message2, message3]
         line_bot_api.reply_message(event.reply_token, message)
         
     elif 'Mad' in msg:
