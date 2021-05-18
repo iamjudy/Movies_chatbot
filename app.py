@@ -166,13 +166,10 @@ def handle_message(event):
         line_bot_api.reply_message(event.reply_token, message)
     ###
     elif '可以唷' in msg:
-        #message1 = TextSendMessage(text=OK)
-        message = {
-            'type': '8525',
-            'packageId': '1',
-            'stickerId': '16581296'
-        }
-        #message = [message1, message2]
+        message1 = TextSendMessage(text=OK)
+        message2 = StickerSendMessage(package_id=8525, sticker_id=16581296)
+        
+        message = [message1, message2]
         line_bot_api.reply_message(event.reply_token, message)
     elif 'No' in msg:
         message = TextSendMessage(text=NONO)
