@@ -43,7 +43,7 @@ Redemption='1：Dark Blue \n2：Witness \n3： Amidst the Devils Wings \n4：Dea
 Imitation='1：The Duchess \n2：The Fifth Estate\n3：Milk \n4： A Dangerous Method\n5： The Railway Man'
 
 OK ='謝謝你的滿意～\n還想看其他電影類型推薦的話，\n可以再次輸入「我想看電影」唷！'
-NONO ='收到了QQ。\n這只是我們的一小步，\n請期待後續的改良和進步！\n\n也歡迎再次輸入「我想看電影」，\n看看別的種類推薦唷！'
+NONO ='收到了QQ。\n這只是我們的一小步，\n請期待後續的改良和進步！\n\n也歡迎再次輸入「我想看電影」，\n看看別的電影類型推薦唷！'
 
 
 app = Flask(__name__)
