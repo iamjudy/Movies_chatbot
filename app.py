@@ -169,8 +169,8 @@ def handle_message(event):
         message1 = TextSendMessage(text=OK)
         message2 = {
             'type': 'sticker',
-            packageId: '789',
-            stickerId: '10856'
+            packageId: '1',
+            stickerId: '1'
         }
         message = [message1, message2]
         line_bot_api.reply_message(event.reply_token, message)
