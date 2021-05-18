@@ -18,7 +18,7 @@ import time
 
 Default='感謝您的訊息！\n很抱歉，本帳號沒有那麼聰明QQ，請輸入神秘的 keyword 來開啟對話哦。'
 
-Spider='1：Spider-Man 2 \n2：Spider-Man \n3：The Sorcerers Apprentice \n4：Prince of Persia: The Sands of Time\n5：The Mummy: Tomb of the Dragon Emperor'
+Spider='1：11Spider-Man 2 \n2：Spider-Man \n3：The Sorcerers Apprentice \n4：Prince of Persia: The Sands of Time\n5：The Mummy: Tomb of the Dragon Emperor'
 Mad='1：Damnation Alley \n2：The Blood of Heroes \n3：The Time Machine \n4：Mad Max Beyond Thunderdome\n5：Battle for the Planet of the Apes'
 Skyfall='1：Spectre \n2：Quantum of Solace \n3：Mission: Impossible - Rogue Nation \n4：Tomorrow Never Dies\n5：Casino Royale'
 
@@ -101,6 +101,7 @@ def handle_message(event):
     ###
     elif 'Spider' in msg:
         message = TextSendMessage(text=Spider)
+        message = Confirm_Template()
         line_bot_api.reply_message(event.reply_token, message)
     elif 'Mad' in msg:
         message = TextSendMessage(text=Mad)
