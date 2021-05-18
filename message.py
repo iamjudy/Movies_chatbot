@@ -5,18 +5,17 @@ from linebot.models import *
 
 def Confirm_Template():
     message = TemplateSendMessage(
-        alt_text='是否註冊成為會員？',
+        alt_text='您還滿意這個推薦嗎？',
         template=ConfirmTemplate(
-            text="是否註冊成為會員？",
+            text="您還滿意這個推薦嗎><？",
             actions=[
-                PostbackTemplateAction(
-                    label="馬上註冊",
-                    text="現在、立刻、馬上",
-                    data="會員註冊"
+                MessageTemplateAction(
+                    label="可以唷",
+                    text="可以唷"
                 ),
                 MessageTemplateAction(
-                    label="查詢其他功能",
-                    text="查詢其他功能"
+                    label="NoNo",
+                    text="NoNo"
                 )
             ]
         )

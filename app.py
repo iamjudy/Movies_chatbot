@@ -42,6 +42,9 @@ Godfather='1：The Godfather: Part III \n2：The Godfather: Part II \n3：Amidst
 Redemption='1：Dark Blue \n2：Witness \n3： Amidst the Devils Wings \n4：Dead Man Walking\n5：The Hudsucker Proxy'
 Imitation='1：The Duchess \n2：The Fifth Estate\n3：Milk \n4： A Dangerous Method\n5： The Railway Man'
 
+OK ='謝謝你的滿意～\n還想看其他電影類型推薦的話，\n可以再次輸入「我想看電影」唷！'
+NONO ='收到了QQ。\n這只是我們的一小步，\n請期待後續的改良和進步！'
+
 
 app = Flask(__name__)
 static_tmp_path = os.path.join(os.path.dirname(__file__), 'static', 'tmp')
@@ -100,9 +103,11 @@ def handle_message(event):
         line_bot_api.reply_message(event.reply_token, message)
     ###
     elif 'Spider' in msg:
-        message = TextSendMessage(text=Spider)
-        message = Confirm_Template()
+        message1 = TextSendMessage(text=Spider)
+        message2 = Confirm_Template()
+        message = [message1, message2]
         line_bot_api.reply_message(event.reply_token, message)
+        
     elif 'Mad' in msg:
         message = TextSendMessage(text=Mad)
         line_bot_api.reply_message(event.reply_token, message)
@@ -160,9 +165,18 @@ def handle_message(event):
         message = TextSendMessage(text=Imitation)
         line_bot_api.reply_message(event.reply_token, message)
     ###
+    elif '可以唷' in msg:
+        message = TextSendMessage(text=OK)
+        line_bot_api.reply_message(event.reply_token, message)
+    elif 'No' in msg:
+        message = TextSendMessage(text=NONO)
+        line_bot_api.reply_message(event.reply_token, message)
+    ###
     else:
         message = TextSendMessage(text=Default)
         line_bot_api.reply_message(event.reply_token, message)
+
+    
 
 import os
 if __name__ == "__main__":
