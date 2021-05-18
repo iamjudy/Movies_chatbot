@@ -207,7 +207,7 @@ def handle_message(event):
         message = [message1, message2]
         line_bot_api.reply_message(event.reply_token, message)
     elif 'No' in msg:
-        message = TextSendMessage(text=NONO)
+        message1 = TextSendMessage(text=NONO)
         message2 = StickerSendMessage(package_id=8525, sticker_id=16581296)
         message = [message1, message2]
         line_bot_api.reply_message(event.reply_token, message)
