@@ -10,4 +10,4 @@ Keyword：我想看電影（已加在對話提示裡）
 
 Movies.ipynb：推薦模型
 
-app.py , message.py：Line chatbot
+app.py & message.py：Line chatbot
